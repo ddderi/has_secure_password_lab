@@ -1,0 +1,10 @@
+<h1>new session </h1>
+
+
+<%= form_for @user, url: login_path, method: :post do |f|%>
+<br><%= f.label "username" %><br>
+<%= f.text_field :name %> <br>
+<%= f.label 'password' %>
+<br> <%= f.password_field :password %><br>
+<%= f.submit 'login' %> 
+<%end%>
